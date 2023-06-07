@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@300&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+/* sidebar */
+.sidebar {
+    background-color: #fff;
+}
+.sidebar-brand{
+    color:#551FFF !important;
+}
+
+.card {
+    border-radius: 20px;
+}
+.ps, .sd, .user{
+    border-right: 1px solid #ECECEE;
+}
+.ps .ikon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4em;
+    height: 50px;
+    background-color: #FFF2E9;
+    border-radius: 16px;
+    margin-right: 10px;
+    color: #FF6A00;
+    font-size: 1em;
+}
+.sd .ikon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4em;
+    height: 50px;
+    background-color: #EDE8FF;
+    border-radius: 16px;
+    margin-right: 10px;
+    color: #551FFF;
+    font-size: 1em;
+}
+.user .ikon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4em;
+    height: 50px;
+    background-color: #EAF9FF;
+    border-radius: 16px;
+    margin-right: 10px;
+    color: #00B7FE;
+    font-size: 1em;
+}
+.sdd .ikon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4em;
+    height: 50px;
+    background-color: #FFEBEF;
+    border-radius: 16px;
+    margin-right: 10px;
+    color: #FD2254;
+    font-size: 1em;
+}
+
+.data h4 {
+    font-size: 20px;
+}
+
+/* .divider::after {
+    content: "";
+    display: block;
+    width: 1px;
+    background-color: gray;
+    height: 50%;
+} */
+
+.badge-selesai {
+    background-color: #551FFF;
+    color: #ddd;
+    border-radius: 20px;
+}
+.badge-disewa {
+    background-color: #ECECEE;
+    color: #551FFF;
+    border-radius: 20px;
+}
+
+
+/* data table */
+table {
+width: 100%;
+border-collapse: collapse;
+}
+
+th, td {
+padding: 8px;
+text-align: left;
+border-bottom: 1px solid #ddd;
+}
+
+th {
+background-color: #f2f2f2;
+}
+
+/* Form Pencarian */
+.search-form {
+display: flex;
+justify-content: flex-start;
+align-items: center;
+margin-bottom: 10px;
+}
+
+.search-form input[type="text"] {
+padding: 6px;
+width: 200px;
+}
+
+/* Tombol Tambah Data */
+.add-data-button {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+
+.add-data-button button {
+padding: 8px 16px;
+background-color: #4CAF50;
+color: white;
+border: none;
+cursor: pointer;
+}
+
+/* homepage */
+.nav-home {
+    transition: background-color 0.3s;
+}
+.nav-home .navbar-nav {
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar-scrolled {
+    background-color:  rgba(255, 255, 255, 0.2); /* Ganti dengan warna latar belakang yang Anda inginkan */
+    color: #000 !important;
+}
+.nav-item {
+    transition: color 0.3s;
+  }
+.active {
+    color: #000080 !important;
+    font-weight: bold;
+    /* border-bottom: 2px solid #000080; */
+}
+.active i {
+    color: #000080 !important;
+}
+.active span{
+    border-bottom: 1px solid #000080;
+}
+  .nav-item-scrolled {
+    color: #000 !important; /* Ganti dengan warna link yang Anda inginkan */
+  }
+.navbar-header {
+    /* background-color: #000; */
+    margin-left: -6em;
+}
+.navbar-collapse {
+    /* background-color: #000; */
+    margin-right: -6em;
+}
+.kiri {
+    background-color: #fff;
+    padding-top: 7em;
+    /* padding-left: 2em; */
+}
+.kiri h2 {
+    font-family: 'K2D', sans-serif;
+    color: #000080;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    font-size: 43px;
+    /* width: 14em; */
+}
+.kiri h2 span {
+    color: #000;
+}
+.kiri p {
+    font-size: 20px;
+    color: #000;
+    /* width: 25em; */
+    font-weight: lighter;
+}
+.kiri .btn {
+    margin-top: 1.5em;
+    background-color: #000080;
+    color: #fff;
+}
+.kiri .hero-ps {
+    background-color: #C9F2FF;
+    margin-top: 5.5em;
+    width: 110%;
+}
+.kiri .hero-ps .ps5 {
+    width: 25%;
+    position: relative;
+    z-index: 999;
+    margin-right: 30px;
+    margin-top: -6.5em;
+}
+.kiri .hero-ps .ps4 {
+    width: 25%;
+    /* position: relative; */
+    z-index: 999;
+    margin-right: 30px;
+    margin-top: -5em;
+}
+.kanan {
+    background-color: #000080;
+    height: 104vh;
+    padding-top: 4em;
+}
+.kanan .stick {
+    /* width: 100%; */
+    position: relative;
+    z-index: 999;
+    margin-left: -12em;
+}
+/* closehomepage */
+
+/* harga*/
+.list-harga {
+    height: 100vh;
+    margin-top: 3em;
+    background: url(../img/logo-bg.png);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: bottom;
+    background-position-x: left;
+    background-position-x: -6%;
+}
+.list-harga h1,
+.list-harga p {
+    text-align: center;
+}
+.list-harga h1 {
+    font-weight: bold;
+    color: #000;
+}
+.list-harga .card .card-header {
+    border-radius: 20px 20px 0 0;
+}
+.list-harga .card .card-header {
+    background-color: #000080;
+    color:#fff;
+    height: 13rem;
+}
+.list-harga .card-header p{
+    margin: 0;
+}
+.list-harga .card-header p:nth-child(1){
+    font-weight: bold;
+    margin-top: 10px;
+}
+.list-harga .card-header p:nth-child(2){
+    font-size: .8em;
+    font-weight: lighter;
+}
+.list-harga .card-header p:nth-child(3){
+    font-size: 2em;
+}
+.list-harga .card-header p span{
+    font-size: 1.5em;
+}
+.list-harga .card-header p:nth-child(4){
+    font-weight: lighter;
+    margin-top: -10px;
+}
+.list-harga .card-body li {
+    list-style-type: none;
+}
+.list-harga .btn-cekHarga{
+    background-color: #000080;
+    color: #fff;
+}
+/* close harga */
+
+/* list game */
+.list-game {
+    height: 100vh;
+    margin-top: 3em;
+    background: url(../img/bg-listgim.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    background-attachment: fixed;
+}
+
+.list-game .overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 65%;
+    padding-top: 6em;
+    color: #fff;
+}
+.list-game h1{
+    font-weight: bold;
+    color: #fff;
+}
+/* close list game */
+/* pemesanan */
+.pemesanan {
+    height: 110vh;
+    margin-top: 3em;
+    background: url(../img/bg-footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    background-attachment: fixed;
+}
+.pemesanan .container {
+    padding-top: 5em;
+    color: #fff;
+    font-weight: bold;
+}
+.pemesanan .container h1,
+.pemesanan .container p{
+    text-align: center;
+}
+.pemesanan form input{
+    border-radius: 15px;
+}
+
+.pemesanan form .btn{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.pemesanan form .btn:hover{
+    background-color: white;
+    color: #000;
+}
+/* close pemesanan */
+/* login */
+.hero {
+    background-color: #fff;
+}
+.hero .logo-header {
+    width: 15%;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 70%;
+}
+
+
+.login {
+    color: #fff;
+    background-color: #000080;
+    height: 100vh;
+    font-family: 'Jua', sans-serif;
+}
+.form {
+    /* background-color: #4CAF50; */
+    padding: 20px 50px 0 120px ;
+}
+.login .form h1 {
+    font-size: 3em;
+    width: fit-content;
+}
+
+.login .form {
+    margin-top: 5em;
+}
+.login .form input[type="text"],
+.login .form input[type="password"] {
+    background-color: transparent;
+    border-color: #fff;
+    width: 150%;
+    margin: 10px 0 10px 0;
+}
+.login .form input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    outline: none;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin-right: 5px;
+}
+.login .form input[type="checkbox"]::before{
+    content: "\2713";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: #fff;
+    opacity: 0;
+}
+.login .form input[type="checkbox"]:checked::before{
+    /* background-color: #fff; */
+    opacity: 1;
+}
+.login .form input[type="checkbox"]:focus::before{
+    outline: none;
+    border-color: #fff;
+}
+.login .form input[type="text"]::placeholder,
+.login .form input[type="password"]::placeholder{
+    color: #d2d2d2;
+    font-family: 'Times New Roman', Times, serif;
+}
+.login .form input[type="text"]:focus,
+.login .form input[type="password"]:focus{
+    box-shadow: 0 0 10px 5px rgba(0, 0, 255, 0.5);
+    color: #fff;
+}
+.login .form input[type="text"]:focus::placeholder,
+.login .form input[type="password"]:focus::placeholder{
+    color: transparent;
+    
+}
+
+.form form {
+    margin-left: -10px;
+}
+
+.form .btn {
+    background-color: #fff;
+    color: #000080;
+    margin-top: 40px;
+    width: 40%;
+}
+
+.form .btn:hover,
+input[type="checkbox"]:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 255, 0.5);
+}
+
