@@ -312,6 +312,14 @@
                         <div class="form-group">
                             <input type="number" class="form-control" id="no_identitas" name="no_identitas" placeholder="No Identitas" width="50">
                         </div>
+                        <div class="form-group">
+                            <select name="jenis_identitas" id="jenis_identitas" width="50" class="form-control">
+                                <option value="SIM">SIM</option>
+                                <option value="KTP">KTP</option>
+                                <option value="KTM">KTM</option>
+                                <option value="STNK">STNK</option>
+                            </select>
+                        </div>
                         <div class="tombol d-flex justify-content-center">
                             <button type="submit" class="btn">Daftar Sekarang</button>
                         </div>

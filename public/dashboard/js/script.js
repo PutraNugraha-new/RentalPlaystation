@@ -41,6 +41,7 @@ $(function() {
         $('#no_telp').val('');
         $('#alamat').val('');
         $('#no_identitas').val('');
+        $('#jenis_identitas').val('');
         $('.modal-body form').attr('action', '/admin/pelanggan/save');
         $('.modal-footer button[type=submit').html('Tambah Data');
     });
@@ -62,6 +63,7 @@ $(function() {
                 $('#no_telp').val(data.no_telp);
                 $('#alamat').val(data.alamat);
                 $('#no_identitas').val(data.no_identitas);
+                $('#jenis_identitas').val(data.jenis_identitas);
                 $('#id_pelanggan').val(data.id_pelanggan);
             }
         });

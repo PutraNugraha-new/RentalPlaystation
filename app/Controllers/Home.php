@@ -27,7 +27,8 @@ class Home extends BaseController
             'tgl_lahir' => $this->request->getVar('tgl_lahir'),
             'no_telp' => $this->request->getVar('no_telp'),
             'alamat' => $this->request->getVar('alamat'),
-            'no_identitas' => $this->request->getVar('no_identitas')
+            'no_identitas' => $this->request->getVar('no_identitas'),
+            'jenis_identitas' => $this->request->getVar('jenis_identitas'),
         ]);
         session()->setFlashdata('pesan', 'Kamu telah Terdaftar');
 

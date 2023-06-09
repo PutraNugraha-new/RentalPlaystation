@@ -47,6 +47,7 @@
                                             <th>Nama Pelanggan</th>
                                             <th>No Identitas</th>
                                             <th>No WA</th>
+                                            <th>Jenis Identitas</th>
                                             <th>Aksi</th>
                                         </tr>
                                     </thead>
@@ -55,6 +56,7 @@
                                             <th>Nama Pelanggan</th>
                                             <th>No Identitas</th>
                                             <th>No WA</th>
+                                            <th>Jenis Identitas</th>
                                             <th>Aksi</th>
                                         </tr>
                                     </tfoot>
@@ -64,6 +66,7 @@
                                                 <td><?= $data['nama_pelanggan']; ?></td>
                                                 <td><?= $data['no_identitas'] ?></td>
                                                 <td><?= $data['no_telp'] ?></td>
+                                                <td><?= $data['jenis_identitas'] ?></td>
                                                 <td>
                                                     <div class="col-12">
                                                         <a href="" class="btn btn-dark p-1 tampilModalUbahPelanggan" data-toggle="modal" data-target="#formModal" data-id="<?= $data['id_pelanggan'] ?>">
@@ -131,6 +134,17 @@
                         <label for="no_identitas" class="col-sm-4 col-form-label">No Identitas</label>
                         <div class="col-sm-8">
                             <input type="number" class="form-control" id="no_identitas" name="no_identitas" placeholder="Nomor Identitas">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="no_identitas" class="col-sm-4 col-form-label">Jenis Identitas</label>
+                        <div class="col-sm-8">
+                            <select name="jenis_identitas" id="jenis_identitas" class="form-control">
+                                <option value="SIM">SIM</option>
+                                <option value="KTP">KTP</option>
+                                <option value="KTM">KTM</option>
+                                <option value="STNK">STNK</option>
+                            </select>
                         </div>
                     </div>
                     <div class="modal-footer">
